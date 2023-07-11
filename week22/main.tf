@@ -1,3 +1,13 @@
+terraform {
+  backend "remote" {
+    organization = "TopKoda-luit"
+
+    workspaces {
+      name = "luit-week22"
+    }
+  }
+}
+
 module "vpc" {
   source               = "./modules/vpc"
   vpc_cidr             = "10.0.0.0/16"

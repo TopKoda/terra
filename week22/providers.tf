@@ -1,4 +1,4 @@
 # providers.tf
 provider "aws" {
-  region = var.region
+  # AWS details are provided as environment variables in Terraform Cloud now
 }
