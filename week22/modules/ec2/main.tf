@@ -17,6 +17,7 @@
                 echo "<p>Instance ID: $INSTANCE_ID</p>" | sudo tee -a /var/www/html/index.html
                 echo "<p>Region: $REGION</p>" | sudo tee -a /var/www/html/index.html
                 echo "<p>Availability Zone: $AVAILABILITY_ZONE</p>" | sudo tee -a /var/www/html/index.html
+                echo "<p>Date and Time: $(date)</p>" | sudo tee -a /var/www/html/index.html                
                 sudo systemctl restart httpd
                 EOF
 
